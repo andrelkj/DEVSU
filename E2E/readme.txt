@@ -5,17 +5,8 @@ https://www.demoblaze.com/
 - Fill purchase form
 - Complete the order
 
-Option 2
-https://www.saucedemo.com/
-- Auth with user (standard_user / secret_sauce)
-- Add two products to the cart
-- Display cart
-- Fill purchase form
-- Complete the order until confirmation "THANKS FOR YOUR ORDER"
-
-Option 3
-http://opencart.abtracta.us/
-- Add two products to the cart
-- Displays cart
-- Guest user complete "Guest Checkout"
-- User complete the purchase until confirmation "Your order is completed!"
+How it works:
+- demoblaze.cy.js contains all the actual test execution
+- demoblaze.json is a fixture created to store user and products data
+- support pages (cart and dashboard) includes actions for each specific page following page object model
+- cypress.config.js contains the mail url and viewport configurations

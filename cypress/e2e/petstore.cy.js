@@ -8,6 +8,7 @@ describe("Petstore API Tests using Fixtures", () => {
   it("should create a new user", function () {
     const { newUser } = this.data;
 
+    // Create a new user
     cy.request({
       method: "POST",
       url: `${apiUrl}/user`,
@@ -21,6 +22,7 @@ describe("Petstore API Tests using Fixtures", () => {
   it("should find the created user", function () {
     const { newUser } = this.data;
 
+    // Get data from the user created
     cy.request({
       method: "GET",
       url: `${apiUrl}/user/${newUser.username}`,
@@ -36,6 +38,7 @@ describe("Petstore API Tests using Fixtures", () => {
   it("should update the user's name and email", function () {
     const { newUser, updatedUser } = this.data;
 
+    // Update the user data - replace body object completelly
     cy.request({
       method: "PUT",
       url: `${apiUrl}/user/${newUser.username}`,
@@ -49,6 +52,7 @@ describe("Petstore API Tests using Fixtures", () => {
   it("should find the updated user", function () {
     const { newUser, updatedUser } = this.data;
 
+    // Get information for the updated user
     cy.request({
       method: "GET",
       url: `${apiUrl}/user/${newUser.username}`,
@@ -64,6 +68,7 @@ describe("Petstore API Tests using Fixtures", () => {
   it("should delete the user", function () {
     const { newUser } = this.data;
 
+    // Delete the user
     cy.request({
       method: "DELETE",
       url: `${apiUrl}/user/${newUser.username}`,

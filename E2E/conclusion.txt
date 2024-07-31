@@ -1,0 +1,6 @@
+I choose Option 1 - Demoblaze purchase flow scenario to automate.
+
+It was quite challenging once there are some bugs into the application that make it hard to interact with the page elements and navigate through the page itself
+Some of those challenges I faced required to add wait so the component could be properly loaded as for example:
+- the forms that does not fill the name in case you just run the automation without this proper "pause"
+- the purchase completion modal that does not close in case you just click it before proper loading time

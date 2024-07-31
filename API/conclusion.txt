@@ -1,0 +1,3 @@
+I choose Option 3 - Petstore user creation, update and deletion.
+
+It was pretty straight forward and I didn't had any issue with that at all.
