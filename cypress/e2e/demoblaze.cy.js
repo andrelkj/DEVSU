@@ -3,7 +3,7 @@ import cartPage from "../support/pages/cart";
 
 describe("DemoBlaze Purchase Flow", () => {
   beforeEach(() => {
-    cy.fixture("e2e").as("data");
+    cy.fixture("demoblaze").as("data");
   });
 
   it("should add two products to the cart and complete the purchase", function () {

@@ -1,0 +1,22 @@
+{
+  "newUser": {
+    "id": 12345,
+    "username": "testuser",
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "testuser@example.com",
+    "password": "password123",
+    "phone": "123-456-7890",
+    "userStatus": 1
+  },
+  "updatedUser": {
+    "id": 12345,
+    "username": "testuser",
+    "firstName": "Updated",
+    "lastName": "User",
+    "email": "updateduser@example.com",
+    "password": "password123",
+    "phone": "123-456-7890",
+    "userStatus": 1
+  }
+}
