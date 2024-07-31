@@ -29,7 +29,7 @@ describe("Petstore API Tests using Fixtures", () => {
     }).then((response) => {
       expect(response.status).to.eq(200);
       expect(response.body).to.include({
-        username: newUser.username,
+        username: newUser.username, 
         email: newUser.email,
       });
     });
